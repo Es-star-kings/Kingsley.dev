@@ -3,7 +3,7 @@
 window.pay = function(){
 
     let handler = PaystackPop.setup({
-      key: "YOUR_PAYSTACK_PUBLIC_KEY",
+      key: "https://paystack.shop/pay/learnjava",
       email: document.getElementById("email").value,
       amount: 100000,
   
