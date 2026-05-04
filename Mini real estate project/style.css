@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: monospace, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body
+{
+    min-height: 100vh;
+}
+
+.home
+{
+    background: url(public/homeImage.jpg)no-repeat, center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.home h1
+{
+    font-family: 'Righteous', sans-serif;
+    color: transparent;
+    background: linear-gradient(to right, #0000ff, #2727bb, #00e1ff);
+    background-clip: text;
+    font-size: 3rem;
+    font-weight:600;
+}
+
+.home p
+{
+    color: #fff;
+    font-weight: 600;
+}
+
+.locator
+{
+    background: #ffffff00;
+    backdrop-filter: blur(10px);
+    border-radius: 1rem;
+    border: 1px solid #ffffff1e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 20px;
+}
+
+.search
+{
+    display: flex;
+    gap: 20px;
+}
+
+.search input
+{
+    outline: none;
+    background: #fff;
+    border: none;
+    padding: 5px;
+    border-radius: 0.5rem;
+    width: 100%;
+}
+
+.search select
+{
+    border: none;
+    padding: 5px;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.search button
+{
+    background: #2727bb;
+    color: #fff;
+    border: none;
+    padding: 5px;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+.search button:hover
+{
+    background: #00e1ff;
+}
+
+.card
+{
+    display: flex;
+    gap: 20px;
+    padding: 5px;
+}
+
+.card div
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #ffffff2d;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    border: 1px solid #ffffff25;
+    padding: 5px;
+    fill: #2727bb;
+    transition: 0.3s ease;
+    color: #fff;
+    font-weight: 600;
+}
+
+.card div:hover
+{
+    transform: scale(1.05);
+}
+
+::-webkit-scrollbar
+{
+    background: white;
+}
+
+::-webkit-scrollbar-thumb
+{
+    background: #2727bb;
+    cursor: pointer;
+}
+
+.sec
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #f5f5f5;
+    padding: 10px;
+}
+
+.featured .text h3
+{
+    width: 100%;
+    padding: 40px;
+    font-weight: 600;
+    font-size: 2rem;
+    background: #f5f5f5;
+}
+
+.f-card 
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.f-card .box
+{
+   background: white;
+   padding-bottom: 10px;
+   border-radius: 15px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   box-shadow: -2px 2px 3px #0c0c0c1e;
+   cursor: pointer;
+   transition: 0.3s ease;
+   overflow: hidden;
+}
+
+.f-card .box:hover
+{
+    transform: scale(1.05);
+}
+
+.f-card .box .img-box
+{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    padding: 10px;
+    justify-content: right;
+}
+
+.f-card .box .img-box svg
+{
+    background: white;
+    border-radius: 50%;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: #252525b6;
+    transition: 0.3s ease;
+}
+
+.f-card .box .img-box svg:hover
+{
+    fill: black;
+}
+
+.f-card .info-sec
+{
+    padding: 5px;
+    line-height: 1.6;
+}
+
+.f-card .info-sec svg
+{
+    fill: #0000ff;
+    scale: 0.8;
+}
+
+.f-card .info-sec h3
+{
+    color: #0000ff;
+}
+
+.f-card .info-sec .h-info
+{
+    display: flex;
+    background: #77c4ce49;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.f-card .info-sec .h-info div
+{
+    font-size: small;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact
+{
+    background: #2727bb;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact .text
+{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact .text h3
+{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.contact .text p
+{
+    font-weight: 600;
+}
+
+.contact .text a
+{
+    color: #0000ff;
+    background: #fff;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    transition: 0.3s ease;
+}
+
+.contact .text a:hover
+{
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.footer
+{
+    background: #00000c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    padding: 40px;
+    text-wrap: nowrap;
+}
+
+.det-info
+{
+    display: flex;
+    color: white;
+    gap: 100px;
+}
+
+.det-info .nav-links
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.det-info .nav-links nav a
+{
+    color: #ffffff7e;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s ease;
+    line-height: 1.8;
+}
+
+.det-info .nav-links nav a:hover
+{
+    color: #fff;
+    transform: translateX(2px);
+}
+
+.det-info .nav-links .socail-icons
+{
+    fill: #ffffff7e;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.det-info .nav-links .socail-icons svg:hover
+{
+    fill: white;
+    transform: scale(1.05);
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+/* Tablets (<= 1024px) */
+@media (max-width: 1024px) {
+
+    .f-card {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .det-info {
+        gap: 50px;
+    }
+
+    .home h1 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+}
+
+/* Mobile (<= 768px) */
+@media (max-width: 768px) {
+
+    .home {
+        height: auto;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .home h1 {
+        font-size: 2rem;
+    }
+
+    .home p {
+        font-size: 14px;
+    }
+
+    /* Search bar stacks */
+    .search {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .search input,
+    .search select,
+    .search button {
+        width: 100%;
+    }
+
+    /* Location cards wrap */
+    .card {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card div {
+        width: 100px;
+    }
+
+    /* Featured grid becomes 1 column */
+    .f-card {
+        grid-template-columns: 1fr;
+    }
+
+    /* House info wraps */
+    .f-card .info-sec .h-info {
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 5px;
+    }
+
+    /* Contact section */
+    .contact {
+        height: auto;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    /* Footer stacks */
+    .footer {
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .det-info {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .det-info .nav-links nav {
+        align-items: center;
+    }
+}
+
+/* Small phones (<= 480px) */
+@media (max-width: 480px) {
+
+    .home h1 {
+        font-size: 1.6rem;
+    }
+
+    .featured .text h3 {
+        font-size: 1.5rem;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .card div {
+        width: 80px;
+        font-size: 12px;
+    }
+
+    .f-card .box .img-box {
+        height: 150px;
+    }
+}
